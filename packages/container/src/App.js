@@ -13,7 +13,7 @@ const Header = () => (
     <br />
     <Link to="/react">MFE - React App</Link>
     <br />
-    <Link to="/vue">MFE - Vue App</Link>
+    <Link to="/vue">MFE - xVue App</Link>
   </div>
 );
 
