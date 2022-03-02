@@ -15,8 +15,8 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: "container",
       remotes: {
-        helloReact: `helloReact@website/helloReact/remoteEntry.js`,
-        helloVue: `helloVue@website/helloVue/remoteEntry.js`,
+        helloReact: `helloReact@helloReact/remoteEntry.js`,
+        helloVue: `helloVue@helloVue/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
