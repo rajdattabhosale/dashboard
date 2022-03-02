@@ -3,7 +3,7 @@ import React from "react";
 function App() {
   return (
     <div>
-      <p>Some more changes this stuff ssworks coming here!!!</p>
+      <p>Some more changes this stuff works coming here!!!</p>
       <header>
         <p>
           Edit <code>src/App.js</code>
