@@ -1,20 +1,32 @@
 import React from "react";
+import HelloReactApp from "./components/HelloReactApp";
+import { Route, Switch, Router, Link } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import HelloVueApp from "./components/HelloVueApp";
 
-function App() {
+const history = createBrowserHistory();
+
+const Header = () => (
+  <div>
+    <title>Dashboard</title>
+    <Link to="/">Home</Link>
+    <br />
+    <Link to="/react">MFE - React App</Link>
+    <br />
+    <Link to="/vue">MFE - Vue App</Link>
+  </div>
+);
+
+export default () => {
   return (
-    <div>
-      <p>Some more changes this stuff works coming here!!!</p>
-      <header>
-        <p>
-          Edit <code>src/App.js</code>
-        </p>
-
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          learn some more good stuff
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <Header />
+      <hr />
+      <Switch>
+        <Route path="/vue" component={HelloVueApp} />
+        <Route path="/react" component={HelloReactApp} />
+        <Route path="/" component={HelloReactApp} />
+      </Switch>
+    </Router>
   );
-}
-
-export default App;
+};
