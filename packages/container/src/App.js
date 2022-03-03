@@ -11,9 +11,9 @@ const Header = () => (
     <title>Dashboard</title>
     <Link to="/">Home</Link>
     <br />
-    <Link to="/react">MFE - React App</Link>
+    <Link to="/react">MFE React App</Link>
     <br />
-    <Link to="/vue">MFE - Vue App</Link>
+    <Link to="/vue">MFE Vue App</Link>
   </div>
 );
 
