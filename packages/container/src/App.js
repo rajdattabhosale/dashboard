@@ -9,7 +9,6 @@ const history = createBrowserHistory();
 const Header = () => (
   <div>
     <title>Dashboard</title>
-    <h1>Menu</h1>
     <Link to="/">Home</Link>
     <br />
     <Link to="/react">MFE React App</Link>
